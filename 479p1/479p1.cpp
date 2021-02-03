@@ -15,6 +15,18 @@ struct compare
     }
 };
 
+int CalcDistance(int row1, int column1, int row2, int column2) {
+    int rowDistance = row2 - row1;
+    if (rowDistance < 0) {
+        rowDistance *= -1;
+    }
+    int columnDistance = column2 - column1;
+    if (columnDistance < 0) {
+        columnDistance *= -1;
+    }
+    return rowDistance + columnDistance;
+}
+
 int main() 
 {
 
