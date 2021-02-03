@@ -27,6 +27,8 @@ int CalcDistance(int row1, int column1, int row2, int column2) {
     return rowDistance + columnDistance;
 }
 
+
+
 int main() 
 {
 
@@ -41,6 +43,7 @@ int main()
         {
             que.push(puzzle[i][j]);
             cout <<  puzzle[i][j];
+            cout << " ";
         }
         cout << endl;
     }
